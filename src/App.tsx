@@ -12,7 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="products">
           <Route index element={<Products />} />
-          <Route path=":id" element={<ProductDetails />} />
+          <Route path="/products/:id" element={<ProductDetails />} />
         </Route>
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
