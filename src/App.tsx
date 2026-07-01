@@ -3,18 +3,21 @@ import { Products } from "./pages/products";
 import { ProductDetails } from "./pages/product-details";
 import { Home } from "./pages/home";
 import { Layout } from "./components/ui";
+import { About } from "./pages/about";
 
 function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route element={<Layout />} />
-        <Route path="/" element={<Home />} />
-        <Route path="products">
-          <Route index element={<Products />} />
-          <Route path="/products/:id" element={<ProductDetails />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="products">
+            <Route index element={<Products />} />
+            <Route path="/products/:id" element={<ProductDetails />} />
+          </Route>
+          <Route path="about" element={<About />} />
+          <Route path="*" element={<Navigate to="/" replace />} />
         </Route>
-        <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </BrowserRouter>
   );
