@@ -17,11 +17,13 @@
   --heading: system-ui, "Segoe UI", Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
+  font: 16px var(--sans);
+  /* font: 18px/145% var(--sans); */
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
-  background: var(--bg);
+  /* background: var(--bg); */
+  background: #0f1014;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -58,9 +60,10 @@
   margin: 0 auto;
   text-align: center;
   border-inline: 1px solid var(--border);
+  /* min-height: 100svh; */
   min-height: 100svh;
-  display: flex;
-  flex-direction: column; */
+  /* display: flex; */
+  /* flex-direction: column; */
   box-sizing: border-box;
 }
 
@@ -78,10 +81,10 @@ h2 {
 h1 {
   font-size: 56px;
   letter-spacing: -1.68px;
-  margin: 32px 0;
+  margin: 0;
   @media (max-width: 1024px) {
     font-size: 36px;
-    margin: 20px 0;
+    /* margin: 20px 0; */
   }
 }
 h2 {
