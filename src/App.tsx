@@ -4,6 +4,7 @@ import { ProductDetails } from "./pages/product-details";
 import { Home } from "./pages/home";
 import { Layout } from "./components/ui";
 import { About } from "./pages/about";
+import { CategorizedProduct } from "./pages/products/categorized-product";
 
 function App() {
   return (
@@ -13,6 +14,10 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="products">
             <Route index element={<Products />} />
+            <Route
+              path="/products/category/:category"
+              element={<CategorizedProduct />}
+            />
             <Route path="/products/:id" element={<ProductDetails />} />
           </Route>
           <Route path="about" element={<About />} />
