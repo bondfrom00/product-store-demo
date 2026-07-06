@@ -271,3 +271,20 @@ code {
   }
 }
 
+.stars {
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+div.stars::after {
+  content: "★★★★★";
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: gold;
+  width: calc(var(--rating) / 5 * 100%);
+  overflow: hidden;
+  white-space: nowrap;
+}
