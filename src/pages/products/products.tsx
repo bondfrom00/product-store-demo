@@ -85,7 +85,12 @@ export const Products: React.FC = () => {
       });
   }, []);
 
+  let filteredData = [...[productsArray]];
+  // let filteredData = [...[productsArray]];
+  //return productArray as original
   let sortedData: any = productsArray;
+
+  console.log({ sortedData, productsArray });
 
   const sortByLowest = () => {
     setSorted("lowest");
@@ -112,7 +117,7 @@ export const Products: React.FC = () => {
   if (loading)
     return (
       <div className="h-dvh content-center m-auto w-fit">
-        <Spinner className="size-8" />
+        <Spinner className="size-8" strokeWidth={2} />
       </div>
     );
 
