@@ -11,6 +11,7 @@ export default defineConfig({
     babel({ presets: [reactCompilerPreset()] }),
     tailwindcss(),
   ],
+  base: "/https://github.com/bondfrom00/product-store-demo/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
