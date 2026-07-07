@@ -85,12 +85,9 @@ export const Products: React.FC = () => {
       });
   }, []);
 
-  let filteredData = [...[productsArray]];
-  // let filteredData = [...[productsArray]];
-  //return productArray as original
   let sortedData: any = productsArray;
 
-  console.log({ sortedData, productsArray });
+  // console.log({ sortedData, productsArray });
 
   const sortByLowest = () => {
     setSorted("lowest");

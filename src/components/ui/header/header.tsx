@@ -1,15 +1,4 @@
-import { Link, NavLink } from "react-router";
-
-import {
-  NavigationMenu,
-  NavigationMenuContent,
-  NavigationMenuItem,
-  NavigationMenuLink,
-  NavigationMenuList,
-  NavigationMenuTrigger,
-  navigationMenuTriggerStyle,
-} from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
+import { NavLink } from "react-router";
 
 export const Header: React.FC = () => {
   return (
