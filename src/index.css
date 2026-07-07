@@ -271,6 +271,19 @@ code {
   }
 }
 
+a.nav-link {
+  border-radius: 6px;
+  padding: 6px 12px;
+}
+
+a.nav-link.active {
+  background-color: #1a1c23;
+}
+
+a.nav-link:not(.active):hover {
+  background-color: #1a1c23;
+}
+
 .stars {
   position: relative;
   display: inline-block;
